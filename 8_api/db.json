@@ -1,0 +1,64 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "Ahmet Yılmaz",
+            "email": "ahmet@example.com",
+            "age": 25,
+            "city": "İstanbul"
+        },
+        {
+            "id": 2,
+            "name": "Ayşe Demir",
+            "email": "ayse@example.com",
+            "age": 30,
+            "city": "Ankara"
+        },
+        {
+            "id": 3,
+            "name": "Mehmet Kaya",
+            "email": "mehmet@example.com",
+            "age": 28,
+            "city": "İzmir"
+        }
+    ],
+    "posts": [
+        {
+            "id": 1,
+            "title": "React Öğreniyorum",
+            "content": "React ile harika uygulamalar geliştiriyorum",
+            "userId": 1,
+            "date": "2025-01-15"
+        },
+        {
+            "id": 2,
+            "title": "JavaScript İpuçları",
+            "content": "Modern JavaScript özellikleri hakkında notlar",
+            "userId": 2,
+            "date": "2025-01-16"
+        }
+    ],
+    "products": [
+        {
+            "id": 1,
+            "name": "Laptop",
+            "price": 15000,
+            "category": "Elektronik",
+            "inStock": true
+        },
+        {
+            "id": 2,
+            "name": "Kitap",
+            "price": 50,
+            "category": "Eğitim",
+            "inStock": true
+        },
+        {
+            "id": 3,
+            "name": "Telefon",
+            "price": 8000,
+            "category": "Elektronik",
+            "inStock": false
+        }
+    ]
+}
