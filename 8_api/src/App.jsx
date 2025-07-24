@@ -30,6 +30,10 @@ function App() {
     const response = await axios.put(`${BASE_URL}/users/${id}`, updatedUser);
     console.log(response.data);
   }
+  const deleteUserById = async (id) => {
+    const response = await axios.delete(`${BASE_URL}/users/${id}`);
+    console.log(response.data);
+  }
 
 
   //async ve await kullanarak asenkron fonksiyonlar oluşturabiliriz.
@@ -47,12 +51,14 @@ function App() {
     // };
     // createUser(newUser);
 
-    updateUser(3, {
-      name: 'UpdatedUmut',
-      age: 20,
-      email: 'updated@example.com',
-      city: 'Updated İstanbul'
-    })
+    // updateUser(3, {
+    //   name: 'UpdatedUmut',
+    //   age: 20,
+    //   email: 'updated@example.com',
+    //   city: 'Updated İstanbul'
+    // })
+
+    deleteUserById(3);
 
 
     // useEffect, component mount olduğunda çalışacak ve getAllUsers fonksiyonunu çağıracak.
