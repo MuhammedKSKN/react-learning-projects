@@ -15,11 +15,11 @@
       "city": "Ankara"
     },
     {
-      "id": "3",
-      "name": "Mehmet Kaya",
-      "email": "mehmet@example.com",
-      "age": 28,
-      "city": "İzmir"
+      "name": "UpdatedUmut",
+      "age": 20,
+      "email": "updated@example.com",
+      "city": "Updated İstanbul",
+      "id": "3"
     },
     {
       "id": "962a",
@@ -72,6 +72,13 @@
     },
     {
       "id": "c541",
+      "name": "Enes",
+      "age": 25,
+      "email": "enes@example.com",
+      "city": "İstanbul"
+    },
+    {
+      "id": "6f55",
       "name": "Enes",
       "age": 25,
       "email": "enes@example.com",

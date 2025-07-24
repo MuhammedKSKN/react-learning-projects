@@ -26,6 +26,11 @@ function App() {
   //Linki dinamik hale getirmek için template literals kullanabilirsin.
   //responsu yakalamasan da olur test için o 
 
+  const updateUser = async (id, updatedUser) => {
+    const response = await axios.put(`${BASE_URL}/users/${id}`, updatedUser);
+    console.log(response.data);
+  }
+
 
   //async ve await kullanarak asenkron fonksiyonlar oluşturabiliriz.
   //Bunu js dersleri 108-110. video izleyebilirsin
@@ -33,13 +38,22 @@ function App() {
     //getAllUsers();
     //getUserById(1);
 
-    const newUser = {
-      name: 'Enes',
-      age: 25,
-      email: 'enes@example.com',
-      city: 'İstanbul'
-    };
-    createUser(newUser);
+
+    // const newUser = {
+    //   name: 'Enes',
+    //   age: 25,
+    //   email: 'enes@example.com',
+    //   city: 'İstanbul'
+    // };
+    // createUser(newUser);
+
+    updateUser(3, {
+      name: 'UpdatedUmut',
+      age: 20,
+      email: 'updated@example.com',
+      city: 'Updated İstanbul'
+    })
+
 
     // useEffect, component mount olduğunda çalışacak ve getAllUsers fonksiyonunu çağıracak.
   }, []);
@@ -50,5 +64,6 @@ function App() {
     </div>
   )
 }
+
 
 export default App
